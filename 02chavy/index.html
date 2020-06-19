@@ -8,28 +8,96 @@
 	<link rel="stylesheet" href="css/jquery.bxslider.css">
 	<script src="js/jquery-3.1.1.min.js"></script>
 	<script src="js/jquery.bxslider.js"></script>
+	<script>
+		$(document).ready(function(){
+			$(".slider").bxSlider({});
+		});
+
+	</script>
 	<style>
-		.hdTop{width: 1220px;height: 100px; margin: 0 auto;}
+		.hdTop{width: 1200px;height: 60px;
+			margin: 0 auto;
+			background-color: #ffffff;
+		}
+		.hdTop>h1{width: 175px;line-height: 60px;display: block;
+			background-color: #fff;float: left;}
+		.hdMenu>li{float: left;width: 16.666%;}
+		.hdMenu{width: 1025px;float: right;}
+		.hdMenu>li>a{display: block;
+			text-align: center;
+			line-height: 60px;
+		}
+		
+		.hdTop a:hover{background-color: rgba(0,0,0,0)}
+
+		.visual .slider .view{
+			width: 1200px;position: relative;
+			height: 800px;margin: 0 auto;
+		}
+		.visual .slider li{overflow: hidden;}
+		.visual .slider img.img{position: absolute;left: 50%;}
+		.visual .vTxt{position: absolute;top: 150px;width: 500px;	}
+		.visual .vTxt h3{font-size: 2.5em;margin-bottom: 20px;}
+		.visual .vTxt{}
+		.visual .vTxt{}
+
+		
+
 	</style>
 </head>
 <body>
 	<div class="hdTop clearfix">
 		<h1 class="logo"><a href="#">chavy</a></h1>
-	
-	<div class="header clearfix">
-		<ul class="hdMenu">
+		<ul class="hdMenu clearfix">
 			<li><a href="#">Home</a></li>
 			<li><a href="#">How It Works</a></li>
 			<li><a href="#">Company</a></li>
 			<li><a href="#">Career</a></li>
 			<li><a href="#">Sign in</a></li>
-			<li><a href="#">Register</a></li>
+			<li ><a href="#" class="btnA">Register</a></li>
+			
 		</ul>
 	</div>
 	</div>
-	<div class="vSlider">
-		<img src="images/chavy01,jpg" alt="">
-		<img src="images/chavy01,jpg" alt="">
+	<div class="visual ">
+		<div class="slider">
+			<li>
+				<div class="view">
+					<img src="images/cha_img_01.jpg" alt="" class="img">
+					<div class="vTxt">
+						<h3>Financial plans for</h3>
+						every person and
+						<p>everywhere.</p>
+						<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vitae, sunt!</p>
+						<a href="#" class="btnA">Request Demo</a>
+					</div>
+				</div>
+			</li>
+			<li>
+				<div class="view">
+					<img src="images/cha_img_01.jpg" alt="" class="img">
+					<div class="vTxt">
+						<h3>Financial plans for</h3>
+						<p>every person and</p>
+						<p>everywhere.</p>
+						<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vitae, sunt!</p>
+						<a href="#" class="btnA">Request Demo</a>
+					</div>
+				</div>
+			</li>
+			<li>
+				<div class="view">
+					<img src="images/cha_img_01.jpg" alt="" class="img">
+					<div class="vTxt">
+						<h3>Financial plans for</h3>
+						<p>every person and</p>
+						<p>everywhere.</p>
+						<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vitae, sunt!</p>
+						<a href="#" class="btnA">Request Demo</a>
+					</div>
+				</div>
+			</li>
+		</div>
 	</div>
 </body>
 </html>
