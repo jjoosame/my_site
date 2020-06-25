@@ -260,16 +260,14 @@
 		top: 350px;
 	}
 
-    
-
-
-
-
-    
-
-
-	.footer{height: 470px;background-color:#f8f9ff;margin:0 auto;padding: 0;}
-	
+   .footer{padding: 100px 0;background-color:#f8f9ff;position: relative;}
+   .footer .boxVIII{width: 1200px;height: 300px;margin: 0 auto ;}
+   .footer .tBox{width: 300px;height: 210px;float: left;   }
+   .footer .ttBox{width: 500px;height: 210px;float: right;margin-right: 100px;}
+   .footer .ttbox li{
+   		width: 140px;height: 210px;
+   		display: block;
+   		position: absolute;}
 	</style>
 	<div class="boxVI ">
 		<div class="txtVI">
@@ -292,13 +290,18 @@
 			<a href="#" class="btnB">Request Demo</a>
 	    </div>
 	 </div>
-	<div class="footer ">
-		<h2>chavy</h2> Lorem ipsum dolor sit amet.<p>Lorem ipsum dolor<p> sit amet, consectetur<p>adipisicing elit. Sapiente, numquam.
-		<ul>
-			<li>ABOUT<p>Lorem ipsum dolor sit amet</li>
-			<li>PRODUCK<p>Lorem ipsum dolor sit amet</li>
-			<li>COMPANY<p>Lorem ipsum</li>
-		</ul>
-	    </div>
+	<div class="footer clearfix">
+		<div class="boxVIII ">
+			<div class="tBox"><h2>chavy</h2> <br>Lorem ipsum dolor sit amet.<br>
+				Lorem ipsum dolor<p> sit amet, consectetur<p>adipisicing elit. Sapiente, numquam.</div>
+			<div class="ttBox">
+				<ul class="clearfix">
+					<li>ABOUT<br>Lorem ipsum<p> dolor sit<p> amet</li>
+					<li>PRODUCK<br>Lorem ipsum<p> dolor sit<p> amet</li>
+					<li>COMPANY<br>Lorem<p> ipsum</li>
+				</ul>
+			</div>
+		</div>
+	 </div>
 </body>
 </html>
