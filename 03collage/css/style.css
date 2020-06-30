@@ -152,13 +152,13 @@
 	background-color:white;position: absolute;
 }
 .bottom_box li{float: left;display: block;}
-.bottom_box h3{width: 300px;text-align: center;
+.bottom_box h3{width: 300px;text-align: center;padding-top: 20px;
 }
-.bottom_box h4{width: 300px;text-align: center;
+.bottom_box h4{width: 300px;text-align: center;padding-top: 20px;
 }
-.bottom_box .UD_box{float: right;padding-right: 0px;
+.bottom_box p{width: 560px;text-align: center;font-size: 13px;padding-top:22px;}
+.bottom_box .UD_box a{float: right;padding-right: 0px;padding-top: 10px
 }
-
 /*footer*/
 footer#footer{
 	height: 200px;
