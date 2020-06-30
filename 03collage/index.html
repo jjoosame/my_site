@@ -7,23 +7,132 @@
 	<link rel="stylesheet" href="css/reset.css">
 	<link rel="stylesheet" href="css/jquery.bxslider.css">
 	<link rel="stylesheet" href="css/style.css"> <!-- 순서중요 -->
+	<script src="js/jquery-3.1.1.min.js"></script>
+	<script src="js/jquery.bxslider.js"></script>
+	<script>
+		$(document).ready(function(){
+			$(".vSlider").bxSlider({pager:false});
+			$(".bSlider").bxSlider();
+		});
+	</script>
 </head>
 <body>
-	<header id="header"></header>
-	<div id="contents">
-	<section class="title"></section>
-	<div class="container">
-		<ul class="clearfix">
-			<li>01</li>
-			<li>02</li>
-			<li>03</li>
-			<li>04</li>
-			<li>05</li>
-			<li>06</li>
-			<li>07</li>
-			<li>08</li>
-		</ul>
+	<header id="hdI">
+		<div class="utilWrap clearfix">
+			<ul class="utilmenu_I clearfix">
+				<li><a href="#">대학교</a></li>
+				<li><a href="#">입학안내</a></li>
+				<li><a href="#">대학원</a></li>
+			</ul>
+			<ul class="utilmenu_II clearfix">
+				<li>글자크기</li>
+				<li class="btnMP clearfix">
+					<a href="#">-</a>
+					<a href="#">+</a>
+				</li>
+				<li><a href="#">찾아오시는길</a></li>
+				<li><a href="#">ENGLISH</a></li>
+				<li><a href="#">사이트맵</a></li>
+			</ul>
+		</div>
+	</header>
+	
+	<div class="hdTop clearfix">
+			<li class="hdtopI">
+				<a href="#"><img src="images/logotxt.jpg" alt=""></a>
+			</li>
+			<ul class="hdtopII">
+				<li><a href="#">대학소개</a></li>
+				<li><a href="#">학과소개</a></li>
+				<li><a href="#">학사안내</a></li>
+				<li><a href="#">대학생활</a></li>
+				<li><a href="#">학생지원센터</a></li>
+			  	<li><a href="#"><img src="images/toggle_btn.gif" alt=""></a></li>
+			</ul>
+
 	</div>
+	
+	<div id="contents">
+		<ul class="title clearfix">
+			<div class="titleTxt">
+				<p>함께 나누며 세상을 이끌어</p><h1>세계로 향하는 한국대학교</h1>
+			</div>
+			<div class="titleIcon">
+				<li>
+					<a href="#"><img src="images/icon_01.png" alt="">
+						<h3>입학절차안내</h3></a>
+				</li>
+				<li>
+					<a href="#"><img src="images/icon_02.png" alt="">
+						<h3>입학설명회</h3></a>
+				</li>
+				<li>
+					<a href="#"><img src="images/icon_03.png" alt="">
+						<h3>장학제도</h3></a>
+				</li>
+				<li>
+					<a href="#"><img src="images/icon_04.png" alt="">
+						<h3>증명서발급</h3></a>
+				</li>
+			</div>
+		</ul>
+
+		<div class="container">
+			<ul class="clearfix"> 
+				<li class="sliderI clearfix"><!-- 01 -->
+					<div><img src="images/box_01.jpg" alt=""></div>
+					<div class="sliderItxt">
+						<p>한국에서<br>시작하는<br>새로운 꿈</p>
+						<a href="#">자세히보기 ▶</a>
+					</div>
+					<div><img src="images/box_01.jpg" alt=""></div>
+					<div class="sliderItxt">
+						<p>한국에서<br>시작하는<br>새로운 꿈</p>
+						<a href="#">자세히보기 ▶</a>
+					</div>
+				</li>
+				<li class="box_II clearfix"><!-- 02 -->
+					<div><img src="images/box_02.jpg" alt=""></div>
+					<div class="box_II_Txt">
+						<h2><b>APP</b>으로<br><b>스마트 도서관</b><br>바로이용하자!</h2><br>
+						<p>모바일 열람증은<br>도서관 자료실/도서대출 등에<br>사용 할 수 있습니다.</p>
+						<a href="#">자세히보기 ▶</a>
+
+					</div>
+				</li>
+				<li class="box_III clearfix"><!-- 03 -->
+					<p>HOT LINK</p>
+						<a href="#"><img src="images/oicon_01.png" alt="">국제교류<br>센터</a>
+						<a href="#"><img src="images/oicon_02.png" alt="">원격지원<br>시스템</a>
+						<a href="#"><img src="images/oicon_03.png" alt="">예산/결산<br>공고</a>
+				</li>
+				<li class="box_IV clearfix"><!-- 04 -->
+					<!-- <img src="images/box_04.jpg" alt=""> -->
+					
+						<p>공지사항</p><br>
+						<a href="">· [공지] 한국대학교 웹진............2016-06-12<br></a>
+						<a href="">· [보도] 우수대학교 선정 수상..2016-06-17<br></a>
+						<a href="">· [공지] 대학입시 설명회............2016-06-05<br></a>
+						<a href="">· [공지] 2016년 1학기 성적........2016-05-14<br></a>
+				
+				</li>
+				<li class="box_V clearfix"><!-- 05 -->
+					<p>SNS NEWS</p>
+					<a href=""><img src="images/box_05.jpg" alt="">
+						한국 대학교는<br>2021학년도 신입생<br>
+						입학생을 3월 2일(목)<br>본교 종합체육관...</a>
+				</li>
+				<li class="box_VI clearfix"><!-- 06 -->
+					<img src="images/box_06.jpg" alt="">
+				</li>
+				<li class="box_VII clearfix"><!-- 07 -->
+					<img src="images/box_07.jpg" alt="">
+				</li>
+				<li><!-- 08 -->
+					<img src="images/box_08.jpg" alt="">
+				</li>
+		 	</ul>
+		</div>
 	</div>
 	<footer id="footer"></footer>
 	

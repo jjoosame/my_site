@@ -1,5 +1,49 @@
 @charset "utf-8";
-header#header{height: 160px;}
+/*reset*/
+		*{margin: 0;padding: 0;box-sizing: border-box}
+		a:link,a:visited{color: #000;text-decoration: none;}
+		li{list-style: none;}
+		.clearfix:after{content:"";display: block;clear: both;}  /*float해제역활*/
+
+/*header*/
+#hdI{background-color: #0044af;height: 40px;}
+
+.hdTop .hdtopI{width: 210px;height: 55px;padding-top: 50px;}
+.utilWrap{width: 1200px;margin: 0 auto;}
+
+.utilWrap .utilmenu_I{float: left;}
+.utilWrap .utilmenu_I li{width: 120px;margin-right: 2px;
+	float: left;
+	}
+.utilWrap .utilmenu_I li>a{
+	display: block;text-align:center; line-height: 40px;
+	color: white;font-weight:bold;
+	background-color: #00163b;}
+
+.utilWrap .utilmenu_II{float: right;width: 320px;}
+.utilWrap .utilmenu_II li{float:left;color: white;font-size: 13.5px;text-align: center;margin-right: 6px;}
+.utilWrap .utilmenu_II li:first-child{padding-top: 10px;}
+.utilWrap .utilmenu_II li:last-child a{padding-right: 0px;}  /*명령이 안먹는거같음*/
+.utilWrap .utilmenu_II li>a{
+	display: block;text-align: center;line-height:40px;color: white;
+	}
+.utilWrap .utilmenu_II .btnMP a{
+	float: left;background: white;padding: 0;
+	margin-right: 2px; color: #333;width: 20px;height: 20px;
+	line-height: 20px;text-align: center;margin-top: 10px;/*text-indent: -1px;*/
+}
+
+
+.hdTop{width: 1200px;height: 120px;background-color: white;
+	margin: 0 auto;position: relative;}
+.hdTop .hdtopI{position: absolute;padding-top:30px}
+
+.hdTop .hdtopII{float: right;width: 740px;}
+.hdTop .hdtopII li{float: left;padding-top: 50px;margin: 0 auto;margin-right:40px;}
+.hdTop .hdtopII li>a>img{margin-top: -10px;}
+.hdTop .hdtopII li:first-child a{padding-left: 58px;}
+/*.hdTop .hdtopII li:last-child a{padding-right: 0px;}  */
+
 /*contents*/
 #contents{
 	height: 1300px;
@@ -9,20 +53,69 @@ header#header{height: 160px;}
 	background-size: auto,cover; /*높이값이 자동으로 잡힘*/
 }
 #contents .title{
-	width: 1200px;height: 260px;background-color: gray;
-	margin: auto;
+	width: 1200px;height: 260px;_background-color: gray;
+	margin: 0 auto; position: relative;
+	
 }
-#contents .container{width: 1200px;margin: auto;}
-#contents .container li{float: left;width: 25%;height: 225px;}
+#contents .title .titleTxt{position: absolute;float: left;
+	top: 80px; /*font-size: 1.3em; */color: white;
+}
+#contents .title .titleTxt p{font-size: 45px;}
+#contents .title .titleTxt h1{font-size: 60px	}
+#contents .title .titleIcon{float: right;width: 425px;}
+#contents .title .titleIcon li{float:left;color:white;
+	margin-left: 13px;padding-top: 80px;}
+#contents .title .titleIcon li>a{
+	display: block;text-align: center;line-height: 20px;
+	color: white;font-size: 10px;
+}
 
-#contents .container li:nth-child(1){background: #f00;width: 75%;height: 450px;}
-#contents .container li:nth-child(2){background: #ff0;height: 450px;}
-#contents .container li:nth-child(3){background: #fff;}
-#contents .container li:nth-child(4){background: #00f;}
-#contents .container li:nth-child(5){background: #f0f;}
-#contents .container li:nth-child(6){background: skyblue;}
-#contents .container li:nth-child(7){background: orange;}
-#contents .container li:nth-child(8){background: aqua;width: 75%;}
+/*#contents .title .titleIcon li:last-child a{padding-right: 0;}*/
+
+
+#contents .container{width: 1200px;margin: auto;position: relative; }
+#contents .container>ul>li{float: left;width: 25%;height: 225px;}
+
+#contents .container>ul>li:nth-child(1){background: #f00;width: 75%;height: 450px;}
+#contents .container>ul>li:nth-child(2){background: #ff0;height: 450px;}
+#contents .container>ul>li:nth-child(3){background: #00163b;}
+#contents .container>ul>li:nth-child(4){background: #00f;}
+#contents .container>ul>li:nth-child(5){background: #fff;}
+#contents .container>ul>li:nth-child(6){background: skyblue;}
+#contents .container>ul>li:nth-child(7){background: orange;}
+#contents .container>ul>li:nth-child(8){background: aqua;width: 75%;}
+
+/*슬라이더 오류;*/
+.sliderI .sliderItxt{
+	position: absolute;top: 85px;left: 85px;
+}               
+.sliderI .sliderItxt p{font-size: 60px;color:#1651b9;font-weight: bold;}
+.sliderI .sliderItxt a{display: block;width: 165px;height: 40px;margin-top: 20px;
+		background-color:#192d4e;color: white;text-align: center;
+		padding-top:8px;
+}
+.box_II .box_II_Txt{width: 300px;
+	position: relative;top: -380px;left: 40px;color: white;
+}
+.box_II .box_II_Txt h2{font-size: 32px	}
+.box_II .box_II_Txt a{display: block;width: 165px;height: 40px;
+	margin-top: 50px;background-color:rgba(0,0,0,0.5);
+	border: 1px solid #c5b896;text-align: center;color: white;padding-top: 8px;
+}
+.box_III{width: 300px;padding-top: 30px;padding-left: 20px;}
+.box_III p{color: white;font-size: 23px;font-weight: bold;}
+.box_III a{display: block;float: left;color: white;text-align: center;
+	padding-top: 20px;margin-left: 18px;font-size: 10px;line-height: 18px;
+}
+.box_IV{width: 300px;padding-top: 30px;
+	padding-left: 20px;
+}
+.box_IV p{color: white;font-size: 23px;font-weight: bold;}
+.box_IV a{color:white;font-size: 13px}
+
+.box_V{width: 300px;padding-top: 30px;padding-left: 20px;}
+.box_V p{color:#00173d;font-size: 25px;font-weight: bold;}
+.box_V a{color: #4d4d4d;font-size:10px;display: block;padding-top: 20px;}
 
 /*footer*/
 footer#footer{
