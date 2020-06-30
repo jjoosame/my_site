@@ -21,7 +21,8 @@
 	background-color: #00163b;}
 
 .utilWrap .utilmenu_II{float: right;width: 320px;}
-.utilWrap .utilmenu_II li{float:left;color: white;font-size: 13.5px;text-align: center;margin-right: 6px;}
+.utilWrap .utilmenu_II li{float:left;color: white;font-size: 13.5px;
+	text-align: center;margin-right: 6px;}
 .utilWrap .utilmenu_II li:first-child{padding-top: 10px;}
 .utilWrap .utilmenu_II li:last-child a{padding-right: 0px;}  /*명령이 안먹는거같음*/
 .utilWrap .utilmenu_II li>a{
@@ -81,8 +82,8 @@
 #contents .container>ul>li:nth-child(3){background: #00163b;}
 #contents .container>ul>li:nth-child(4){background: #00f;}
 #contents .container>ul>li:nth-child(5){background: #fff;}
-#contents .container>ul>li:nth-child(6){background: skyblue;}
-#contents .container>ul>li:nth-child(7){background: orange;}
+#contents .container>ul>li:nth-child(6){background: skyblue;position: relative;}
+#contents .container>ul>li:nth-child(7){background: orange;position: relative;}
 #contents .container>ul>li:nth-child(8){background: aqua;width: 75%;}
 
 /*슬라이더 오류;*/
@@ -115,8 +116,26 @@
 
 .box_V{width: 300px;padding-top: 30px;padding-left: 20px;}
 .box_V p{color:#00173d;font-size: 25px;font-weight: bold;}
-.box_V a{color: #4d4d4d;font-size:10px;display: block;padding-top: 20px;}
+.box_V a{color: #4d4d4d;font-size:10px;display: block;
+	padding-top: 20px;
+	
+	
+}
 
+.box_VI{width: 300px;}
+.box_VI a{width: 300px;height: 50px;margin-top:-50px;
+	display: block;text-align: center;
+	border: 1px solid #000;background-color: rgba(0,0,0,0.6);
+	color: white;padding-top: 12px;font-size: 18px;
+	;position: absolute;
+}
+
+.box_VII{width: 300px;}
+.box_VII a{position: absolute;margin: 0 auto;text-align: center;color: white;
+	display: block;border: 1px solid #000;background-color: rgba(0,0,0,0.7);
+	width: 65px;height: 65px;font-size: 33px;border-radius: 50px;padding-top: 5px;
+	padding-left: 5px;margin-top:-130px;margin-left: 120px	
+}
 /*footer*/
 footer#footer{
 	height: 200px;
