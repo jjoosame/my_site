@@ -84,7 +84,7 @@
 #contents .container>ul>li:nth-child(5){background: #fff;}
 #contents .container>ul>li:nth-child(6){background: skyblue;position: relative;}
 #contents .container>ul>li:nth-child(7){background: orange;position: relative;}
-#contents .container>ul>li:nth-child(8){background: aqua;width: 75%;}
+#contents .container>ul>li:nth-child(8){background: aqua;width: 75%;position: relative;}
 
 /*슬라이더 오류;*/
 .sliderI .sliderItxt{
@@ -136,6 +136,29 @@
 	width: 65px;height: 65px;font-size: 33px;border-radius: 50px;padding-top: 5px;
 	padding-left: 5px;margin-top:-130px;margin-left: 120px	
 }
+
+.box_VIII{width: 900px;}
+.box_VIII .box_VIII_txt{top: 40px;left: 40px;position: absolute;color: #ff503d;line-height: 40px;}
+.box_VIII .box_VIII_txt p{font-size: 25px;}
+.box_VIII .box_VIII_txt h2{font-size: 50px;}
+.box_VIII .box_VIII_txt a{display: block;text-align: center;width: 165px;height: 40px;
+	background-color: #ff503d;border: 1px solid #fefefc;color: white;
+	margin-top: 20px;
+}
+
+.bottom_box{width: 1200px;position: relative;margin: auto;margin-top: 20px;
+}
+.bottom_box ul{width: 1200px;height: 60px;
+	background-color:white;position: absolute;
+}
+.bottom_box li{float: left;display: block;}
+.bottom_box h3{width: 300px;text-align: center;
+}
+.bottom_box h4{width: 300px;text-align: center;
+}
+.bottom_box .UD_box{float: right;padding-right: 0px;
+}
+
 /*footer*/
 footer#footer{
 	height: 200px;
