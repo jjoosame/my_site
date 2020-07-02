@@ -6,6 +6,16 @@
 		.clearfix:after{content:"";display: block;clear: both;}  /*float해제역활*/
 
 /*header*/
+.bx-wrapper {
+	    -moz-box-shadow: none;
+	    -webkit-box-shadow: none;
+	    box-shadow: none;
+	    border: 0 none;
+	    margin-bottom:0;
+	}
+
+
+
 #hdI{background-color: #0044af;height: 40px;}
 
 .hdTop .hdtopI{width: 210px;height: 55px;padding-top: 50px;}
@@ -24,7 +34,7 @@
 .utilWrap .utilmenu_II li{float:left;color: white;font-size: 13.5px;
 	text-align: center;margin-right: 6px;}
 .utilWrap .utilmenu_II li:first-child{padding-top: 10px;}
-.utilWrap .utilmenu_II li:last-child a{padding-right: 0px;}  /*명령이 안먹는거같음*/
+.utilWrap .utilmenu_II li:last-child a{margin-right: 0px;}
 .utilWrap .utilmenu_II li>a{
 	display: block;text-align: center;line-height:40px;color: white;
 	}
@@ -39,11 +49,11 @@
 	margin: 0 auto;position: relative;}
 .hdTop .hdtopI{position: absolute;padding-top:30px}
 
-.hdTop .hdtopII{float: right;width: 740px;}
-.hdTop .hdtopII li{float: left;padding-top: 50px;margin: 0 auto;margin-right:40px;}
-.hdTop .hdtopII li>a>img{margin-top: -10px;}
-.hdTop .hdtopII li:first-child a{padding-left: 58px;}
-/*.hdTop .hdtopII li:last-child a{padding-right: 0px;}  */
+.hdTop .hdtopII{float: right;margin-top:30px}
+.hdTop .hdtopII li{float: left;padding:0 20px}
+/*.hdTop .hdtopII li>a>img{margin-top: -10px;}*/
+.hdTop .hdtopII li a{display: block;line-height:45px;font-weight:bold}  
+.hdTop .hdtopII li:last-child{padding-right: 0;}  
 
 /*contents*/
 #contents{
@@ -77,7 +87,8 @@
 #contents .container{width: 1200px;margin: auto;position: relative; }
 #contents .container>ul>li{float: left;width: 25%;height: 225px;}
 
-#contents .container>ul>li:nth-child(1){background: #f00;width: 75%;height: 450px;}
+#contents .container>ul>li:nth-child(1){background: #f00;width: 75%;height: 450px;
+	position: relative;}
 #contents .container>ul>li:nth-child(2){background: #ff0;height: 450px;}
 #contents .container>ul>li:nth-child(3){background: #00163b;}
 #contents .container>ul>li:nth-child(4){background: #00f;}
@@ -86,15 +97,27 @@
 #contents .container>ul>li:nth-child(7){background: orange;position: relative;}
 #contents .container>ul>li:nth-child(8){background: aqua;width: 75%;position: relative;}
 
-/*슬라이더 오류;*/
-.sliderI .sliderItxt{
-	position: absolute;top: 85px;left: 85px;
-}               
-.sliderI .sliderItxt p{font-size: 60px;color:#1651b9;font-weight: bold;}
-.sliderI .sliderItxt a{display: block;width: 165px;height: 40px;margin-top: 20px;
-		background-color:#192d4e;color: white;text-align: center;
-		padding-top:8px;
+
+.box_I{width: 900px;}               
+.box_I .box_Itxt{top: 85px;left: 85px;position: absolute;}
+.box_I .box_Itxt p{ 
+	font-size: 60px;color:#1651b9;font-weight: bold;margin-bottom: 20px
 }
+	/*자세히보기 가려짐;=쌤해결*/
+.box_I .box_Itxt a{	display: block;width: 165px;height: 40px;
+		background-color:#192d4e;color: white;text-align: center;
+		padding-top:8px;/*position: absolute;*/
+		
+}
+.bx-wrapper {
+	    -moz-box-shadow: none;
+	    -webkit-box-shadow: none;
+	    box-shadow: none;
+	    border: 0 none;
+	    margin-bottom:0;
+	}
+
+
 .box_II .box_II_Txt{width: 300px;
 	position: relative;top: -380px;left: 40px;color: white;
 }
@@ -147,20 +170,28 @@
 	margin-top: 20px;
 }
 
+
+.bx-wrapper .bx-pager {bottom: 30px; }
+.bx-wrapper .bx-pager.bx-default-pager a.active{
+    background:#ff503d;
+    }
+
+
+
 .bottom_box{width: 1200px;position: relative;margin: auto;margin-top: 20px;
 }
-.bottom_box ul{width: 1200px;height: 60px;
-	background-color:white;position: absolute;
+.bottom_box>ul{width: 1200px;height: 60px;
+	background-color:white;
 }
-.bottom_box li{float: left;display: block;}
+.bottom_box>ul>li{float: left;display: block;}
 .bottom_box h3{width: 300px;text-align: center;padding-top: 20px;
 }
 .bottom_box h4{width: 300px;text-align: center;padding-top: 20px;
 }
 .bottom_box p{width: 560px;text-align: center;font-size: 13px;padding-top:22px;}
-.bottom_box .UD_box a{float: right;padding-right: -10px;
-	padding-top: 10px;line-height: 5px;
-}
+
+.bottom_box .UD_bt {width: 37px;height: 60px;position: absolute;top: 0;right: 0;}
+.bottom_box .UD_bt li{margin-bottom: 2px}  /*버튼간격조절*/
 /*footer*/
 #footer{height: 200px;width: 700px;margin: 0 auto;
 	position: relative;overflow:hidden;}
