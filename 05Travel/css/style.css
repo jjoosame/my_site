@@ -5,6 +5,19 @@
 		li{list-style: none;}
 		.clearfix:after{content:"";display: block;clear: both;}  
 
+html,body{height: 100%;}	
+
+
+	body{height: 100%;
+	 	background-image: url(../images/bg02.jpg);
+		background-repeat: no-repeat;
+		background-position: center;
+		-webkit-background-size: cover;
+		background-size: cover;
+		overflow-y: scroll;
+		overflow-x: hidden;   /*스크롤 안보이도록*/
+		z-index: 1;
+	}		
 
 
 
@@ -31,7 +44,7 @@
 		}
 .hdTop .hdtopWrap .search .searchBtn{
 			width: 20px;height: 20px;
-			background-image: url(images/search.jpg);
+			background-image: url(../images/search.jpg);
 			text-indent: -9999px;
 			border: 0 none;
 			position: absolute;right: 20px;top:15px;
@@ -40,7 +53,7 @@
 .hdTop .hdtopWrap .search .searchTitle{
 			display: block;
 			width: 60px;height: 20px;
-			background-image: url(images/searchtext.jpg);
+			background-image: url(../images/searchtext.jpg);
 			text-indent:-9999px;
 			position: absolute;top:15px;
 			left:15px;
